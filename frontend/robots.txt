@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /convert
+
+Sitemap: https://pdfly.example.com/sitemap.xml

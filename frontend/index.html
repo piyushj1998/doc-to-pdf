@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PDFly – DOCX to PDF Converter</title>
+<meta name="description" content="Convert Word documents to PDF online. Fast, accurate and private.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://pdfly.example.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#4f46e5">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PDFly">
+<meta property="og:title" content="PDFly – DOCX to PDF Converter">
+<meta property="og:description" content="Convert Word documents to PDF online. Fast, accurate and private.">
+<meta property="og:url" content="https://pdfly.example.com/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PDFly – DOCX to PDF Converter">
+<meta name="twitter:description" content="Convert Word documents to PDF online. Fast, accurate and private.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "PDFly",
+      "url": "https://pdfly.example.com/",
+      "description": "Convert Word (.docx) documents to PDF online. Layout, tables, images and fonts stay intact.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is it free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, for files up to 20 MB." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my files safe?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Uploads are removed from the server right after conversion." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you support .doc or .odt?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Not yet. Only .docx for now." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="#top"><i></i>PDFly</a>
+    <nav>
+      <a class="hide" href="#features">Features</a>
+      <a class="hide" href="#how">How it works</a>
+      <a class="hide" href="#faq">FAQ</a>
+      <button class="btn ghost" id="theme" type="button">Theme</button>
+    </nav>
+  </header>
+
+  <div class="hero" id="top">
+    <h1>Convert Word to <span>PDF</span> in seconds</h1>
+    <p>Upload a .docx file and get a clean, print-ready PDF. Layout, tables, images and fonts stay exactly where they belong.</p>
+
+    <div class="card">
+      <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose DOCX files">
+        <div class="ico">📄</div>
+        <b>Drop your .docx files here</b>
+        <small>or click to browse · up to 10 files · 20 MB each</small>
+      </div>
+      <input type="file" id="file" accept=".docx" multiple hidden>
+      <p class="error" id="error" role="alert" hidden></p>
+      <ul class="files" id="list"></ul>
+      <div class="actions">
+        <button class="btn ghost" id="clear" type="button" hidden>Clear</button>
+        <button class="btn" id="go" type="button" disabled>Convert to PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <section id="features">
+    <h2>Why people use PDFly</h2>
+    <div class="grid">
+      <div class="feat"><div class="ico">🎯</div><h3>Accurate layout</h3><p>Powered by a full office engine, so documents look the same as in Word.</p></div>
+      <div class="feat"><div class="ico">🔒</div><h3>Private by default</h3><p>Files are deleted automatically right after conversion.</p></div>
+      <div class="feat"><div class="ico">⚡</div><h3>Fast batch mode</h3><p>Convert several documents at once.</p></div>
+      <div class="feat"><div class="ico">🌐</div><h3>Unicode ready</h3><p>Hindi, Arabic and other scripts render correctly.</p></div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <div class="grid">
+      <div class="feat"><div class="num">1</div><h3>Upload</h3><p>Drag in your .docx files.</p></div>
+      <div class="feat"><div class="num">2</div><h3>Convert</h3><p>We process them on our server in seconds.</p></div>
+      <div class="feat"><div class="num">3</div><h3>Download</h3><p>Save your PDFs and you’re done.</p></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <details><summary>Is it free?</summary><p>Yes, for files up to 20 MB.</p></details>
+    <details><summary>Are my files safe?</summary><p>Uploads are removed from the server right after conversion.</p></details>
+    <details><summary>Do you support .doc or .odt?</summary><p>Not yet. Only .docx for now.</p></details>
+  </section>
+
+  <footer>© 2026 PDFly</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
